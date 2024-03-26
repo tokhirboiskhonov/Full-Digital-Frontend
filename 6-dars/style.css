@@ -1,0 +1,63 @@
+.border-solid {
+  border: 2px solid orange;
+}
+
+.border-dashed {
+  border: 4px dashed green;
+}
+
+.border-dotted {
+  border: 2px dotted black;
+}
+
+.title {
+  color: green;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box-1 {
+  border: 1px solid black;
+  text-align: left;
+}
+
+.box-2 {
+  border: 1px solid black;
+  text-align: right;
+}
+
+.box-3 {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.box-4 {
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.description-1 {
+  width: 20%;
+  line-height: normal;
+  border: 1px solid black;
+}
+
+.description-2 {
+  width: 20%;
+  line-height: 200%;
+  border: 1px solid black;
+}
+
+.paragraph-wordspacing{
+	word-spacing: 8px;
+}
