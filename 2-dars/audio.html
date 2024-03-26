@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Audio</title>
+  </head>
+  <style>
+    .container {
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+
+    .nav__list {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .nav__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .nav__link {
+      cursor: pointer;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .wrapper {
+      margin-top: 50px;
+    }
+
+    .medias {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+  </style>
+  <body>
+    <header class="container header__container">
+      <a href="./task3.html">
+        <img
+          src="/img/logo__apubadmintonclub-removebg.png"
+          alt="Logo"
+          width="110"
+          height="80"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./video.html">Video</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="./audio.html">Audio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container wrapper">
+        <audio
+          class="medias"
+          src="../2-dars/audio/videoplayback.mp4"
+          controls
+          autoplay
+          width="1140"
+          height="720"
+        ></audio>
+      </section>
+    </main>
+
+    <footer class="container footer__container">
+      <a href="./task3.html">
+        <img
+          src="/img/logo__apubadmintonclub-removebg.png"
+          alt="Logo"
+          width="110"
+          height="80"
+        />
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./video.html">Video</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="./audio.html">Audio</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
