@@ -1,0 +1,71 @@
+// Global styles
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin btn-mix($font-size, $padding) {
+  font-size: $font-size;
+  padding: $padding;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem;
+
+    %general-btn {
+      text-transform: uppercase;
+      font: {
+        family: sans-serif;
+        size: 18px;
+        weight: 500;
+      }
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+      color: #fff;
+      transition: all 0.5s;
+      &:hover {
+        box-shadow: 1px 4px 3.5px 4px rgba(0, 0, 0, 0.09);
+      }
+    }
+
+    .btn-success {
+      background-color: rgb(21, 148, 16);
+      @extend %general-btn;
+    }
+
+    .btn-lg {
+      @include btn-mix(20px, 1.2rem 1.8rem);
+    }
+
+    .btn-warning {
+      background-color: rgb(231, 198, 12);
+      @extend %general-btn;
+    }
+
+    .btn-md {
+      @include btn-mix(17px, 0.8rem 1.2rem);
+    }
+
+    .btn-danger {
+      background-color: rgb(236, 53, 53);
+      @extend %general-btn;
+    }
+
+    .btn-sm {
+      @include btn-mix(12px, 0.5rem 0.8rem);
+    }
+  }
+}

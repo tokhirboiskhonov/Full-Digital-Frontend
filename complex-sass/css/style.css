@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%; }
+  .wrapper .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem; }
+    .wrapper .buttons .btn-success, .wrapper .buttons .btn-warning, .wrapper .buttons .btn-danger {
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+      color: #fff;
+      transition: all 0.5s; }
+      .wrapper .buttons .btn-success:hover, .wrapper .buttons .btn-warning:hover, .wrapper .buttons .btn-danger:hover {
+        box-shadow: 1px 4px 3.5px 4px rgba(0, 0, 0, 0.09); }
+    .wrapper .buttons .btn-success {
+      background-color: #159410; }
+    .wrapper .buttons .btn-lg {
+      font-size: 20px;
+      padding: 1.2rem 1.8rem; }
+    .wrapper .buttons .btn-warning {
+      background-color: #e7c60c; }
+    .wrapper .buttons .btn-md {
+      font-size: 17px;
+      padding: 0.8rem 1.2rem; }
+    .wrapper .buttons .btn-danger {
+      background-color: #ec3535; }
+    .wrapper .buttons .btn-sm {
+      font-size: 12px;
+      padding: 0.5rem 0.8rem; }
+
+/*# sourceMappingURL=style.css.map */
