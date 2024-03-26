@@ -1,0 +1,172 @@
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken Grotesk", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  background-color: violet;
+  color: #303b59;
+}
+
+img {
+  display: block;
+}
+
+/* AUTOFILL-STYLES */
+/*input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	textarea:-webkit-autofill:focus,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover,
+	select:-webkit-autofill:focus {
+	  border-color: transparent;
+	  -webkit-text-fill-color: inherit;
+	  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	}*/
+
+/* PLACEHOLDER-STYLES */
+/*::-webkit-input-placeholder,
+	::-moz-placeholder,
+	:-ms-input-placeholder,
+	:-moz-placeholder {
+	  color: rgba(52, 49, 61, 0.5);
+	  opacity: 1;
+	}*/
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  background-color: #fff;
+  margin: 80px auto;
+  padding: 10px;
+}
+
+.card-localization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 5px;
+  /* margin: 0 auto; */
+}
+
+.card-localization__lang {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.card-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-form__input {
+  max-width: 250px;
+  width: 100%;
+  padding: 5px 8px;
+}
+
+.card-form__input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card-form__btn {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+  padding: 10px 8px;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+}
+
+.card-form__desc {
+  font-size: 12px;
+  line-height: 1;
+  color: darkgrey;
+}
+
+.card-form__desc--strong {
+  font-weight: 900;
+  color: black;
+}
+
+.card-form__facebook::before {
+  position: absolute;
+  content: url("../icon-facebook-20.svg");
+  width: 18px;
+  height: 18px;
+  top: 8px;
+  left: 33px;
+}
+
+.card-form__or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  color: darkgrey;
+}
+
+.card-form__or-line {
+  width: 100px;
+  border: 1px solid darkgray;
+}
+
+.card-for__sign {
+  text-align: center;
+  width: 300px;
+  border-bottom: 1px solid darkgray;
+  padding-bottom: 10px;
+}
