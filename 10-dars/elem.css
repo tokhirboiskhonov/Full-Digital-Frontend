@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.cards {
+  display: flex;
+  perspective: 1000px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 0 10px;
+  position: relative;
+  transform: rotateX(70deg);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotateX(0);
+}
+
+.card:first-child {
+  background-color: slateblue;
+}
+
+.card:nth-child(2) {
+  background-color: coral;
+}
+
+.card:last-child {
+  background-color: slateblue;
+}

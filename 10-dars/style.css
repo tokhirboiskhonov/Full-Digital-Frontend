@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.goods {
+  padding: 50px 0;
+}
+
+.goods__title {
+  padding: 12px;
+}
+
+.goods__wrapper {
+  max-width: 1200px;
+}
+
+.goods__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.goods__column {
+  display: flex;
+  width: fit-content;
+  padding: 5px 10px;
+  flex: 0 1 8.333%;
+}
+
+.goods__item {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #445162;
+}
+
+.goods__item:hover {
+  cursor: pointer;
+}
+
+.goods__inner {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.goods__img {
+  display: block;
+  object-fit: contain;
+}
+
+.goods__img:hover {
+  opacity: 0.5;
+}
+
+.goods__price {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+.goods__sale {
+  width: fit-content;
+  font-size: 8px;
+  font-weight: 400;
+  background-color: red;
+  color: white;
+  border-radius: 15px;
+  padding: 2px 8px;
+}
+
+.goods__btn {
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 8px;
+  color: white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.goods__btn-pink {
+  background-color: pink;
+}
+
+.goods__btn-blue {
+  background-color: lightblue;
+}
+
+.goods__btn-lightblue {
+  background-color: skyblue;
+}
+
+.goods__btn-violet {
+  background-color: violet;
+}
+
+.goods__btn-orange {
+  background-color: orange;
+}
+
+.goods__btn-green {
+  background-color: mediumspringgreen;
+}
+
+.goods__btn-yellow {
+  background-color: goldenrod;
+}
+
+.goods__btn-sky {
+  background-color: lightseagreen;
+}
+
+.goods__btn-darkviolet {
+  background-color: plum;
+}
+
+.goods__btn-salad {
+  background-color: limegreen;
+}
+
+.goods__btn-fiol {
+  background-color: thistle;
+}
+
+.goods__btn-indianred {
+  background-color: indianred;
+}
