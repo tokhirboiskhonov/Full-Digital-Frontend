@@ -1,0 +1,113 @@
+/* Global styles */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  min-height: 10vh;
+  color: #fff;
+  background-color: #000;
+}
+
+header nav ul li h1 {
+  text-align: center;
+}
+/* Section(hero) */
+
+.hero {
+  height: 90vh;
+  background-image: url(./bg-img.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h2 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  background-color: #000;
+  border: 0.75px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.25s linear;
+}
+
+.hero button:hover {
+  background-color: darkgray;
+  color: fff;
+}
+
+/* Section (intro) */
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-img img {
+  width: 100%;
+}
+
+.intro-img {
+  flex: 1 1 30rem;
+}
+
+.intro-text {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.intro-text h2 {
+  margin-top: 10px;
+}
+
+.intro-text p {
+  padding: 0.75rem;
+}
