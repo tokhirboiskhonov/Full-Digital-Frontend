@@ -1,0 +1,161 @@
+/* Default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Move around two circle  */
+.big-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 150px auto;
+}
+
+.small-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: brown;
+  top: calc(50% - 10px);
+  left: 80px;
+  animation: moveCircle 5s linear infinite;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg) translateX(150px) rotate(-90deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(150px) rotate(-180deg);
+  }
+  75% {
+    transform: rotate(270deg) translateX(150px) rotate(-270deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+/* Three cards */
+.wrapper {
+  max-width: 1220px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px auto;
+  padding: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.inner {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.card-x {
+  animation-name: axis-x;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.card-y {
+  animation-name: axis-y;
+  animation-duration: 1.2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.card-z {
+  animation-name: axis-z;
+  animation-duration: 1.2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes axis-x {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+    transition: transform 2s ease;
+  }
+
+  100% {
+    transform: translateX(-50px);
+    transition: transform 2s ease;
+  }
+}
+
+@keyframes axis-y {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50px);
+    transition: transform 2s ease;
+  }
+
+  100% {
+    transform: translateY(-50px);
+    transition: transform 2s ease;
+  }
+}
+
+@keyframes axis-z {
+  from {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: perspective(500px) translateZ(150px);
+  }
+}
+
+/* Square */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 150px auto;
+  animation-name: squareAnimation;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes squareAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
