@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 4-2-lesson</title>
+  </head>
+
+  <style>
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: normal;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: medium;
+      font-weight: bold;
+    }
+
+    form {
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    select,
+    option {
+      width: 100px;
+    }
+
+    option {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .service__type,
+    .agreement {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .agreement__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+
+  <body>
+    <h1>Travel reservation form</h1>
+
+    <p>* denotes mandotory</p>
+
+    <form action="#">
+      <div>
+        <label for="fullName">Full name*:</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="FirstName LastName"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email address*:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="EMAIL_ADDRESS"
+        />
+      </div>
+
+      <div>
+        <label for="country">Select Tour Package*:</label>
+        <select name="country" id="country">
+          <option value="goa">Goa</option>
+          <option value="bali">Bali</option>
+          <option value="langkawi">Langkawi</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="arrivalDate">Arrival date*:</label>
+        <input type="date" name="arrivalDate" id="arrivalDate" />
+      </div>
+
+      <div>
+        <label for="numberPerson">Number of persons*:</label>
+        <input type="number" placeholder="UNKNOWN_TYPE" />
+      </div>
+
+      <div>
+        <label for="checkList">What would you want to avail?*</label>
+        <div class="service__type">
+          Boarding
+          <input
+            type="checkbox"
+            name="service"
+            id="boarding"
+            value="Boarding"
+          />
+        </div>
+
+        <div class="service__type">
+          Fooding
+          <input type="checkbox" name="service" id="fooding" value="Fooding" />
+        </div>
+
+        <div class="service__type">
+          Sight seeing
+          <input
+            type="checkbox"
+            name="service"
+            id="sightSeeing"
+            value="Sight seeing"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="code">Discount Coupon code:</label>
+        <input
+          type="password"
+          name="code"
+          id="code"
+          placeholder="UNKNOWN_TYPE"
+        />
+      </div>
+
+      <div>
+        <label for="agreement">Terms and conditions*</label>
+
+        <div class="agreement__wrapper">
+          <div class="agreement">
+            <input
+              type="radio"
+              name="agreement"
+              id="agreement"
+              value="agree"
+              checked
+            />
+            <label for="agreement">I agree</label>
+          </div>
+
+          <div class="agreement">
+            <input
+              type="radio"
+              name="agreement"
+              id="agreement"
+              value="disagree"
+            />
+            <label for="agreement">I disagree</label>
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" value="Complete reservation" />
+    </form>
+  </body>
+</html>

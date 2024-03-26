@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 4-3-lesson</title>
+  </head>
+
+  <style>
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .gender,
+    .hobbies {
+      display: block;
+    }
+
+    .gender-type,
+    .hobbies-type {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .address-label {
+      display: block;
+    }
+  </style>
+  <body>
+    <form class="form" action="#">
+      <div>
+        <label for="firstName">Firstname</label>
+        <input type="text" name="firstName" id="firstName" />
+      </div>
+
+      <div>
+        <label for="lastName">Lastname:</label>
+        <input type="text" name="lastName" id="lastName" />
+      </div>
+
+      <div>
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="flutter">Flutter</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="gender" for="gender">Gender:</label>
+        <div class="gender-type">
+          <div>
+            <input type="radio" name="gender" id="gender" value="male" /> Male
+          </div>
+
+          <div>
+            <input type="radio" name="gender" id="gender" value="female" />
+            Female
+          </div>
+
+          <div>
+            <input type="radio" name="gender" id="gender" value="other" />
+            Other
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label class="hobbies" for="hobbies">Hobbies:</label>
+        <div class="hobbies-type">
+          <div>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="hobbies"
+              value="programming"
+            />
+            Programming
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="hobbies"
+              value="cricket"
+            />
+            Cricket
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="hobbies"
+              value="football"
+            />
+            Football
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="hobbies"
+              value="readingNovel"
+            />
+            Reading Novel
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="phoneNumber">Phone:</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" />
+      </div>
+
+      <div class="address">
+        <label class="address-label" for="address">Address</label>
+        <textarea name="address" id="address" cols="70" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
