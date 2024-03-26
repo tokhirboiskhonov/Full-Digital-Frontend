@@ -1,0 +1,168 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Task-1 */
+
+.top-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.rows {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 5px;
+}
+
+.left-side {
+  position: relative;
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+}
+
+.square {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 41%;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.columns {
+  width: 150px;
+  height: 35px;
+  background-color: green;
+}
+
+/* Task-2 */
+
+.hero__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  background-color: darkviolet;
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.first__article,
+.second__article,
+.third__article {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: lightblue;
+}
+
+.first__article--heading,
+.second__article--heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.first__article--description,
+.second__article--description {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.third__article--btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.emoji-button {
+  padding: 2px 22px;
+}
+
+.blush-button {
+  display: block;
+  width: 100%;
+}
+
+/* Task-3 */
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  border: 1px #111111 solid;
+}
+
+.item-content {
+  padding: 10px;
+}
+
+.card__btn {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Task-4 */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
