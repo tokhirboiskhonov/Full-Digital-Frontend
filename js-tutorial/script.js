@@ -4,34 +4,37 @@
 
 let colorOne = "red";
 let colorTwo = "blue";
+let tempColor;
 
-colorOne = "blue";
-colorTwo = "red";
+tempColor = colorOne;
+colorOne = colorTwo;
+colorTwo = tempColor;
 
 console.log(colorOne);
 console.log(colorTwo);
 
 //! 2. Task
 
-let a1 = 7;
-let b1 = 19;
+let numOne = 7;
+let numTwo = 19;
+let tempNumber;
 
-a1 = 19;
-b1 = 7;
+tempNumber = numOne;
+numOne = numTwo;
+numTwo = tempNumber;
 
-console.log(a1);
-console.log(b1);
+console.log(numOne);
+console.log(numTwo);
 
 //! 3. Task
 
 var a = 10;
 var b = 20;
+var tempAB;
 
-a = 20;
-b = 10;
-
-console.log(a);
-console.log(b);
+tempAB = a;
+a = b;
+b = tempAB;
 
 document.write(`a = ${a}
 <br/>
