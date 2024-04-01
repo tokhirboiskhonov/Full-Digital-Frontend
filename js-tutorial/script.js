@@ -22,3 +22,17 @@ b1 = 7;
 console.log(a1);
 console.log(b1);
 
+//! 3. Task
+
+var a = 10;
+var b = 20;
+
+a = 20;
+b = 10;
+
+console.log(a);
+console.log(b);
+
+document.write(`a = ${a}
+<br/>
+b = ${b}`);
