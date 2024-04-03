@@ -29,3 +29,12 @@ function fizzBuzz(input) {
 }
 const output = fizzBuzz(15);
 console.log(output); // FizzBuzz
+//! 5. Task
+function buManzara(width, height) {
+  if (width > height) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(buManzara(15, 5)); // true
