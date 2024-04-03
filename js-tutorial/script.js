@@ -46,7 +46,5 @@ function maxOfTwoNumbers(num1, num2) {
     return num2;
   }
 }
-
 const maxNum = maxOfTwoNumbers(20, 5);
-
 console.log(`The maximum value is ${maxNum}`); // The maximum value is 20
