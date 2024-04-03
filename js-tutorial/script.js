@@ -38,3 +38,15 @@ function buManzara(width, height) {
   }
 }
 console.log(buManzara(15, 5)); // true
+//! 6. Task
+function maxOfTwoNumbers(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+const maxNum = maxOfTwoNumbers(20, 5);
+
+console.log(`The maximum value is ${maxNum}`); // The maximum value is 20
