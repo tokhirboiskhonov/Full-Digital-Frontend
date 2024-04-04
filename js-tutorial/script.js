@@ -59,3 +59,37 @@ function showNumebrs(limit) {
 }
 console.log(showNumebrs(15));
 
+//! 8. Task
+
+const marks = [80, 80, 50];
+
+function calculateGrade(marks) {
+  if (marks.length === 0) {
+    return 0;
+  }
+
+  let sum = 0;
+
+  for (let item of marks) {
+    sum += item;
+  }
+
+  const average = sum / marks.length;
+
+  console.log(average);
+
+  if (average >= 90 && average <= 100) {
+    console.log("A");
+  } else if (average >= 80 && average <= 89) {
+    console.log("B");
+  } else if (average >= 70 && average <= 79) {
+    console.log("C");
+  } else if (average >= 60 && average <= 69) {
+    console.log("D");
+  } else {
+    console.log("F");
+  }
+}
+
+calculateGrade(marks);
+
