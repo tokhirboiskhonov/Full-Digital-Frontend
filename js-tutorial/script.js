@@ -57,7 +57,7 @@ function showNumebrs(limit) {
 
   return result.join("\n");
 }
-console.log(showNumebrs(15));
+console.log(showNumebrs(10));
 
 //! 8. Task
 
