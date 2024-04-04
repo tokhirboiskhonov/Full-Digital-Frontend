@@ -93,3 +93,34 @@ function calculateGrade(marks) {
 
 calculateGrade(marks);
 
+//? 2--version
+
+/* const marks = [80, 80, 50];
+
+function calculateGrade(marks) {
+  if (marks.length === 0) {
+    return 0;
+  }
+
+  let sumInitial = 0;
+
+  let sum = marks.reduce((acc, curVal) => acc + curVal, sumInitial); //! Using reduce to calculate the sum of array elements with an initial sum value.
+
+  const average = sum / marks.length;
+
+  console.log(average);
+
+  if (average >= 90 && average <= 100) {
+    console.log("A");
+  } else if (average >= 80 && average <= 89) {
+    console.log("B");
+  } else if (average >= 70 && average <= 79) {
+    console.log("C");
+  } else if (average >= 60 && average <= 69) {
+    console.log("D");
+  } else {
+    console.log("F");
+  }
+}
+
+calculateGrade(marks); */
