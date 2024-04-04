@@ -14,7 +14,7 @@ console.log(numTwo);
 var a = 10,
   b = 20;
 [b, a] = [a, b];
-document.write(`a = ${a}\n<br/>\nb = ${b}`);
+// document.write(`a = ${a}\n<br/>\nb = ${b}`);
 //! 4. Task
 function fizzBuzz(input) {
   if (input % 3 === 0 && input % 5 === 0) {
