@@ -76,8 +76,6 @@ function calculateGrade(marks) {
 
   const average = sum / marks.length;
 
-  console.log(average);
-
   if (average >= 90 && average <= 100) {
     console.log("A");
   } else if (average >= 80 && average <= 89) {
@@ -86,8 +84,10 @@ function calculateGrade(marks) {
     console.log("C");
   } else if (average >= 60 && average <= 69) {
     console.log("D");
-  } else {
+  } else if (average >= 1 && average <= 59) {
     console.log("F");
+  } else {
+    console.log("Sorry, something went wrong!");
   }
 }
 
@@ -108,8 +108,6 @@ function calculateGrade(marks) {
 
   const average = sum / marks.length;
 
-  console.log(average);
-
   if (average >= 90 && average <= 100) {
     console.log("A");
   } else if (average >= 80 && average <= 89) {
@@ -118,8 +116,10 @@ function calculateGrade(marks) {
     console.log("C");
   } else if (average >= 60 && average <= 69) {
     console.log("D");
-  } else {
+  } else if (average >= 1 && average <= 59) {
     console.log("F");
+  } else {
+    console.log("Sorry, something went wrong!");
   }
 }
 
