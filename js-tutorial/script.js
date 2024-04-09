@@ -154,3 +154,20 @@ function showStarts(rows) {
 
 showStarts(10);
 
+//! 11. Task
+
+function showPrimes(num) {
+  for (let i = 2; i <= num; i++) {
+    let isPrime = true;
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+        isPrime = false;
+      }
+    }
+    if (isPrime == true) {
+      console.log(i);
+    }
+  }
+}
+
+showPrimes(10);
