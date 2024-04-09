@@ -140,3 +140,17 @@ function sum(limit) {
 
 console.log(sum(10));
 
+//! 10. Task
+
+function showStarts(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let stars = "";
+    for (let j = 0; j < i; j++) {
+      stars += "*";
+    }
+    console.log(stars);
+  }
+}
+
+showStarts(10);
+
