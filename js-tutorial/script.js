@@ -27,21 +27,18 @@ console.log(!0); // true
 console.log((true && false) || true || (true && false)); // true
 console.log(false || (false && true) || (false && true && false)); // false
 
+//* Logical operators with Non-boolean
 
-//! 11. Task
-
-function showPrimes(num) {
-  for (let i = 2; i <= num; i++) {
-    let isPrime = true;
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) {
-        isPrime = false;
-      }
-    }
-    if (isPrime == true) {
-      console.log(i);
-    }
-  }
-}
-
-showPrimes(10);
+/* Falsy:
+		undefined,
+		null,
+		NaN,
+		0,
+		'' - empty string,
+		false
+	Truthy:
+		1,
+		'abc',
+		true,
+		" "
+*/
