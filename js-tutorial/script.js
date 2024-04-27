@@ -1,3 +1,42 @@
+// Object
+
+let userData = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 20,
+  isMarried: false,
+};
+
+// console.log(userData);
+
+// 2 xil yol bn qiymatni olishimiz mumkin.
+
+// dot notation (I-usul)
+
+// console.log(userData.firstName);
+
+// bracket notation (II-usul)
+
+// console.log(userData["age"]);
+
+// JS da ma'lumotlarni chiqarish
+
+// 1. console.log()
+// console.log("Hello World!");
+
+// 2. document.write()
+let fName = "Tokhirkhuja";
+// document.write(fName);
+
+// 3. alert()
+
+// alert(fName);
+
+// Dasturlash tillarda 2 xil typing languages
+
+//  1. Static Typing (Java, C#, C++, Scala)
+// 2. Dynamic Typing (JS, Python ...)
+
 //* Ternary operator
 
 const myAge = 17;
