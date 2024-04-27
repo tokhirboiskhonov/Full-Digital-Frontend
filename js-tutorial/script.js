@@ -1,63 +1,8 @@
-//! 1. Task
-let colorOne = "red",
-  colorTwo = "blue";
-[colorTwo, colorOne] = [colorOne, colorTwo];
-console.log(colorOne);
-console.log(colorTwo);
-//! 2. Task
-let numOne = 7,
-  numTwo = 19;
-[numTwo, numOne] = [numOne, numTwo];
-console.log(numOne);
-console.log(numTwo);
-//! 3. Task
-var a = 10,
-  b = 20;
-[b, a] = [a, b];
-// document.write(`a = ${a}\n<br/>\nb = ${b}`);
-//! 4. Task
-function fizzBuzz(input) {
-  if (input % 3 === 0 && input % 5 === 0) {
-    return "FizzBuzz";
-  } else if (input % 3 === 0) {
-    return "Fizz";
-  } else if (input % 5 === 0) {
-    return "Buzz";
-  } else {
-    return input;
-  }
-}
-const output = fizzBuzz(15);
-console.log(output); // FizzBuzz
-//! 5. Task
-function buManzara(width, height) {
-  if (width > height) {
-    return true;
-  } else {
-    return false;
-  }
-}
-console.log(buManzara(15, 5)); // true
-//! 6. Task
-function maxOfTwoNumbers(num1, num2) {
-  if (num1 > num2) {
-    return num1;
-  } else {
-    return num2;
-  }
-}
-const maxNum = maxOfTwoNumbers(20, 5);
-console.log(`The maximum value is ${maxNum}`); // The maximum value is 20
-//! 7. Task
-function showNumebrs(limit) {
-  let result = [];
-  for (let i = 0; i <= limit; i++) {
-    result.push(i % 2 === 0 ? `${i} "EVEN"` : `${i} "ODD"`);
-  }
+//* Ternary operator
 
-  return result.join("\n");
-}
-console.log(showNumebrs(10));
+const myAge = 17;
+
+const accessTheatre = myAge >= 18 ? "Yes" : "No";
 
 //! 8. Task
 
