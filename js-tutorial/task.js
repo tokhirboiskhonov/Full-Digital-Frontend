@@ -46,14 +46,13 @@ const maxNum = maxOfTwoNumbers(20, 5);
 console.log(`The maximum value is ${maxNum}`); // The maximum value is 20
 //! 7. Task
 function showNumebrs(limit) {
-  let result = [];
   for (let i = 0; i <= limit; i++) {
-    result.push(i % 2 === 0 ? `${i} "EVEN"` : `${i} "ODD"`);
+    const result = i % 2 === 0 ? `${i} "EVEN"` : `${i} "ODD"`;
+    console.log(result);
   }
-
-  return result.join("\n");
 }
-console.log(showNumebrs(10));
+
+showNumebrs(51);
 
 //! 8. Task
 
