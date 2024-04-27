@@ -27,6 +27,44 @@ console.log(!0); // true
 console.log((true && false) || true || (true && false)); // true
 console.log(false || (false && true) || (false && true && false)); // false
 
+//* Switch Case
+
+function weekDay(day) {
+  let today = day;
+  let result = "";
+
+  switch (today) {
+    case 1:
+      result += "Dushanba";
+      break;
+    case 2:
+      result += "Seshanba";
+      break;
+    case 3:
+      result += "Chorshanba";
+      break;
+    case 4:
+      result += "Payshanba";
+      break;
+    case 5:
+      result += "Juma";
+      break;
+    case 6:
+      result += "Shanba";
+      break;
+    case 7:
+      result += "Yakshanba";
+      break;
+    default:
+      result += "Bunday xafta yo'q bizda, Afsus!";
+      break;
+  }
+
+  return result;
+}
+
+console.log(weekDay(3));
+
 //* Logical operators with Non-boolean
 
 /* Falsy:
