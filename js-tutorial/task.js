@@ -176,9 +176,9 @@ const address = {
 };
 
 function showAddress(address) {
-  let entries = Object.entries(address);
-  console.log(entries);
-  //   console.log(Object.fromEntries(entries));
+  //   let entries = Object.entries(address);
+  //   console.log(entries);
+  for (let key in address) console.log(`${key}: ${address[key]}`);
 }
 
 showAddress(address);
