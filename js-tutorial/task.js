@@ -183,3 +183,32 @@ function showAddress(address) {
 
 showAddress(address);
 
+//! 13. Task
+
+let library = [
+  {
+    author: "Bill Gates",
+    title: "The Road Ahead",
+    readingStatus: true,
+  },
+  {
+    author: "Steve Jobs",
+    title: "Walter Isaacson",
+    readingStatus: true,
+  },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    readingStatus: false,
+  },
+];
+
+function showReadingStatus() {
+  for (let book of library) {
+    let status = book.readingStatus ? "read" : "not read";
+    console.log(`The book "${book.title}" by ${book.author} is ${status}.`);
+  }
+}
+
+showReadingStatus();
+
