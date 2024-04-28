@@ -119,3 +119,31 @@ console.log(weekDay(3));
 		true,
 		" "
 */
+//* Objects(Obyektlar)
+// #1 -> Basic Objects (Obyektlar asosi)
+
+let obj = {
+  firstName: "Tokhirkhuja",
+  age: 24,
+  city: "Tashkent",
+  country: "Uzbekistan",
+};
+
+console.log(obj);
+
+// #2 -> Object properties and methods
+
+const obj2 = {
+  city: "Fergana",
+  country: "UZB",
+  func1: function () {
+    console.log("Func1 is a property");
+  },
+  func2() {
+    console.log("Func2 is a methods");
+  },
+};
+
+// obj2.func1();
+// obj2.func2();
+
