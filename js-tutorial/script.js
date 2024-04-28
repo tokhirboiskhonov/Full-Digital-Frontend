@@ -47,7 +47,7 @@ const accessTheatre = myAge >= 18 ? "Yes" : "No";
 
 //* Logical operators && || !
 
-console.log(false && false); // false
+/* console.log(false && false); // false
 console.log(true && false); // false
 console.log(false && true); // false
 console.log(true && true); // true
@@ -64,11 +64,11 @@ console.log(!1); // false
 console.log(!0); // true
 
 console.log((true && false) || true || (true && false)); // true
-console.log(false || (false && true) || (false && true && false)); // false
+console.log(false || (false && true) || (false && true && false)); // false */
 
 //* Switch Case
 
-function weekDay(day) {
+/* function weekDay(day) {
   let today = day;
   let result = "";
 
@@ -102,7 +102,7 @@ function weekDay(day) {
   return result;
 }
 
-console.log(weekDay(3));
+console.log(weekDay(3)); */
 
 //* Logical operators with Non-boolean
 
@@ -119,6 +119,90 @@ console.log(weekDay(3));
 		true,
 		" "
 */
+
+/* Loop:
+		For
+		while
+		Do while */
+
+/* // for loop
+let potatos = 15;
+
+for (let i = 1; i <= potatos; i++) {
+  console.log(`${i} ta kartoshka archildi`);
+}
+ */
+
+/* // While
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 150];
+
+let sum = 0;
+let i = 0;
+
+while (i < nums.length) {
+  sum += nums[i];
+  i++;
+}
+
+console.log(sum); */
+
+/* // Do while
+
+let potatoCount = 0;
+let i = 1;
+
+do {
+  console.log(`${i} ta kartoshka archildi`);
+  i++;
+} while (i <= potatoCount); */
+
+// Infinitive Loops
+// For in, its only for object
+// For of
+
+/* let data = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 20,
+  isMarried: false,
+};
+
+// for (key in data) {
+//   console.log(`${key}: ${data[key]}`);
+// }
+
+const keys = Object.keys(data);
+// console.log(keys);
+for (let i = 0; i < keys.length; i++) {
+  console.log(keys[i]);
+} */
+
+let users = [
+  {
+    userName: "Black Star",
+    ranking: 2,
+    job: "designer",
+  },
+  {
+    userName: "Blue Sky",
+    ranking: 5,
+    job: "game dev",
+  },
+];
+
+for (let user of users) {
+  //   console.log(user);
+  for (let key in user) {
+    console.log(`${key}: ${user[key]}`);
+  }
+}
+
+let movies = ["Harry", "Your step", "Batman", "Spiderman"];
+
+for (let item of movies) {
+  console.log(item);
+}
+
 //* Objects(Obyektlar)
 // #1 -> Basic Objects (Obyektlar asosi)
 
