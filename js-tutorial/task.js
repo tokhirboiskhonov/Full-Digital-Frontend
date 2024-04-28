@@ -166,3 +166,20 @@ function showPrimes(num) {
 }
 
 showPrimes(10);
+
+//! 12. Task
+
+const address = {
+  street: "Yangikurgan",
+  city: "Tashkent",
+  zipcode: 100018,
+};
+
+function showAddress(address) {
+  let entries = Object.entries(address);
+  console.log(entries);
+  //   console.log(Object.fromEntries(entries));
+}
+
+showAddress(address);
+
