@@ -147,3 +147,16 @@ const obj2 = {
 // obj2.func1();
 // obj2.func2();
 
+//* Objectga qo'shish, dynamic add 
+
+obj2.name = "John Smith";
+
+// console.log(obj2);
+
+//* Objectdan o'chirib tashlash, dynamic delete
+
+delete obj2.func1;
+delete obj2.func2;
+
+console.log(obj2);
+
