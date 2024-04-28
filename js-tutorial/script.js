@@ -174,3 +174,14 @@ console.log("age" in box); // false
 
 // console.log(box);
 
+//! Modern ES6 JS features in object
+
+let firstName = "Malikaxon";
+
+let person = {
+  firstName, // firstName: firstName, --> firstName: "Malikaxon"
+  age: 19,
+};
+
+console.log(person);
+
