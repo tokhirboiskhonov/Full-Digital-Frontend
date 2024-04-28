@@ -185,3 +185,96 @@ let person = {
 
 console.log(person);
 
+/* //* Objects basic (intermediate level)
+ JavaScript Object Properties and methods */
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 25,
+};
+
+//* Object keys, values, entries
+
+/* for (let keys in user) {
+    console.log(keys, user[keys]);
+} */
+
+const keys = Object.keys(user);
+const values = Object.values(user);
+const entries = Object.entries(user);
+console.log(keys);
+console.log(values);
+console.log(entries);
+
+// for (let item of Object.values(user)) {
+//   console.log(item);
+// }
+
+//* Clone objects in JS
+// Javascriptdagi obyektlarni klonlash
+
+// Primitive
+
+let ism1 = "Shabnam";
+let ism2 = ism1;
+
+ism2 = "Zuhrakhon";
+
+console.log(ism1);
+console.log(ism2);
+
+// Non-primitive (reference data types)
+let user1 = {
+  name: "Ali",
+  age: 24,
+};
+
+// let user2 = user1;
+
+// user2.name = "Vali";
+
+// console.log(user2);
+// console.log(user1);
+
+let clone = {};
+
+for (let key in user1) {
+  clone[key] = user1[key];
+}
+
+clone.name = "Jack";
+clone.age = 30;
+
+// console.log(clone); // { name: 'Jack', age: 30 }
+// console.log(user1); // { name: 'Ali', age: 24 }
+
+//! 1. Object.assign
+
+let user2 = Object.assign({}, user1);
+user2.name = "John";
+user2.age = 42;
+console.log(user2); // { name: 'John', age: 42 }
+
+//! 2. Spread Operator
+
+let user3 = { ...user1 };
+user3.name = "Azizbek";
+console.log(user3);
+
+//! Copy with nested obj
+
+let person2 = {
+  name: "Angelina",
+  address: {
+    city: "One South, Garden",
+    state: "Sari-Kelambarg",
+  },
+};
+
+let exPerson = { ...person2 };
+exPerson.name = "Jackson";
+exPerson.address = { ...exPerson.address };
+exPerson.address.state = "KLCC";
+exPerson.address.city = "Langkawi";
+console.log(exPerson);
+console.log(person2);
