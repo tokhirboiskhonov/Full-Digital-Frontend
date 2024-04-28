@@ -160,3 +160,17 @@ delete obj2.func2;
 
 console.log(obj2);
 
+// #3 -> Objectni ichida bormi yoki yo'qmi
+
+const box = {
+  calledName: "Square",
+  color: "Red",
+  number: 7,
+};
+
+console.log("color" in box); // true
+console.log("number" in box); // true
+console.log("age" in box); // false
+
+// console.log(box);
+
