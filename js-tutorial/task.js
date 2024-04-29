@@ -225,3 +225,12 @@ function old35(n) {
 }
 
 console.log(old35(45));
+
+//! 15. Task
+
+const helloName = (str) => `Hello ${str}!`;
+
+console.log(helloName("Bob")); // Hello Bob!
+console.log(helloName("Alice")); // Hello Alice!
+console.log(helloName("X")); // Hello X!
+
