@@ -504,3 +504,8 @@ let fruits = ["apple", "pear", "melon"];
 // fruits.unshift("cherry");
 // console.log(fruits); // [ 'cherry', 'apple', 'pear', 'melon' ]
 
+//? shift
+
+fruits.shift();
+console.log(fruits); // ['pear', 'melon']
+
