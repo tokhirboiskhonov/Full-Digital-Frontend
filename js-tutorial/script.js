@@ -509,3 +509,11 @@ let fruits = ["apple", "pear", "melon"];
 fruits.shift();
 console.log(fruits); // ['pear', 'melon']
 
+//? splice
+
+const numbers = [1, 2, 3, 4, 5];
+
+// numbers.splice(1, 2, "Hello");
+numbers.splice(2, 2, "book", "pen", "sweet");
+console.log(numbers); // [1, 2, 'book', 'pen', 'sweet', 5]
+
