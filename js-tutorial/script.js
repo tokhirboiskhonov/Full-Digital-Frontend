@@ -409,3 +409,18 @@ let mes = "You are registered to membership";
 console.log(mes.indexOf("i")); // 11
 console.log(mes.lastIndexOf("i")); // 30
 
+//? toUpperCase || toLowerCase
+
+let test = "hello guys, how are you doing?";
+let upperTest = test.toUpperCase();
+let lowerTest = test.toLowerCase();
+console.log(upperTest); // HELLO GUYS, HOW ARE YOU DOING?
+console.log(lowerTest); // hello guys, how are you doing?
+
+// practise
+
+const text1 = "Lorem ipsum dolor sit";
+const searchOutput = "IPSum";
+const findWords = text1.toLowerCase().includes(searchOutput.toLowerCase());
+console.log(findWords);
+
