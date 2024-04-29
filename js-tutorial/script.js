@@ -395,3 +395,10 @@ console.log(text.startsWith("el")); // false
 console.log(text.endsWith("or")); // false
 console.log(text.endsWith("ld")); // false
 
+//? includes
+
+let message = "You are selected to our university";
+
+console.log(message.includes("are")); //true
+console.log(message.includes("  to")); // false, because of two empty space
+
