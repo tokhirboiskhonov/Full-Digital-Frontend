@@ -424,3 +424,12 @@ const searchOutput = "IPSum";
 const findWords = text1.toLowerCase().includes(searchOutput.toLowerCase());
 console.log(findWords);
 
+//? subString - ayrim ma'lum bir qismini qirqib olish uchun.
+
+const test1 = "Frontend Developer";
+
+const resultTest1 = test1.substring(0, 8); // birinchi index kiradi lekin ikkinchi index kirmaydi, bu degani gacha
+const resultTest2 = test1.substring(9, 18);
+console.log(resultTest1);
+console.log(resultTest2);
+
