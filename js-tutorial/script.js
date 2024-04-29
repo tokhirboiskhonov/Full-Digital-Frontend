@@ -433,3 +433,10 @@ const resultTest2 = test1.substring(9, 18);
 console.log(resultTest1);
 console.log(resultTest2);
 
+//? replace - alishtirib qo'yish
+
+let test2 = "You are our member and you are registered.";
+
+let resultTest3 = test2.replace("member", "subscriber");
+console.log(resultTest3);
+
