@@ -362,3 +362,16 @@ exPerson.address.state = "KLCC";
 exPerson.address.city = "Langkawi";
 console.log(exPerson);
 console.log(person2);
+
+//* String(methods)
+
+/*
+- charAt
+- startWith || endWith
+- includes
+- indexOf
+- toUpperCase || toLowerCase
+- subString
+- replace
+*/
+
