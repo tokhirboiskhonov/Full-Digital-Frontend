@@ -471,3 +471,22 @@ let todayYear = today.getFullYear();
 const timeInMs = Date.now();
 // console.log(timeInMs);
 console.log(timeInMs / 1000 / 60 / 60 / 24 / 365);
+
+//* Arrays
+
+/*
+#1 -> Adding and Removing elements
+
+Oxiridan--
+	-push
+	-pop
+Boshidan--
+	-unshift
+	-shift
+Xohlagan joydan--
+	-splice
+*/
+
+let fruits = ["apple", "pear", "melon"];
+// console.log(fruits);
+
