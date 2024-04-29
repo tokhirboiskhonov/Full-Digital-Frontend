@@ -375,3 +375,10 @@ console.log(person2);
 - replace
 */
 
+//? charAt - nechinchi indexdagi charni aniqlab beradi.
+
+let word = "Hello";
+let res = word.charAt(4); // o
+console.log(res);
+console.log(word[1]); // e
+
