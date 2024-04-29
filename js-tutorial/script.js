@@ -231,7 +231,7 @@ const obj2 = {
 // obj2.func1();
 // obj2.func2();
 
-//* Objectga qo'shish, dynamic add 
+//* Objectga qo'shish, dynamic add
 
 obj2.name = "John Smith";
 
