@@ -382,3 +382,16 @@ let res = word.charAt(4); // o
 console.log(res);
 console.log(word[1]); // e
 
+//? startWith - boshlanadimi?
+
+let text = "Welcome to JavaScript world.";
+
+console.log(text.startsWith("Welcome")); // true
+console.log(text.startsWith("W")); // true
+console.log(text.startsWith("el")); // false
+
+//? endsWith - boshlanadimi?
+
+console.log(text.endsWith("or")); // false
+console.log(text.endsWith("ld")); // false
+
