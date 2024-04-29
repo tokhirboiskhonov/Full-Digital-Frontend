@@ -499,3 +499,8 @@ let fruits = ["apple", "pear", "melon"];
 // fruits.pop();
 // console.log(fruits); // [ 'apple', 'pear' ]
 
+//? unshift
+
+// fruits.unshift("cherry");
+// console.log(fruits); // [ 'cherry', 'apple', 'pear', 'melon' ]
+
