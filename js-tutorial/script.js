@@ -440,3 +440,11 @@ let test2 = "You are our member and you are registered.";
 let resultTest3 = test2.replace("member", "subscriber");
 console.log(resultTest3);
 
+//* Template literals (ES6 xususiyati - interpolatsiyalash) ``
+
+let Tname = "Tokhirkhuja",
+  Tsurname = "Boiskhonov",
+  age = 24;
+
+console.log(`My full name is ${Tname} ${Tsurname} and I'm ${age} years old!`);
+
