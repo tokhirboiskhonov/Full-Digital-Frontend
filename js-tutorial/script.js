@@ -490,3 +490,7 @@ Xohlagan joydan--
 let fruits = ["apple", "pear", "melon"];
 // console.log(fruits);
 
+//? push
+// fruits.push("waterMelon");
+// console.log(fruits); // [ 'apple', 'pear', 'melon', 'waterMelon' ]
+
