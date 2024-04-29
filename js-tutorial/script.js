@@ -494,3 +494,8 @@ let fruits = ["apple", "pear", "melon"];
 // fruits.push("waterMelon");
 // console.log(fruits); // [ 'apple', 'pear', 'melon', 'waterMelon' ]
 
+//? pop
+
+// fruits.pop();
+// console.log(fruits); // [ 'apple', 'pear' ]
+
