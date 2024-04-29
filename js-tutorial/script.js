@@ -402,3 +402,10 @@ let message = "You are selected to our university";
 console.log(message.includes("are")); //true
 console.log(message.includes("  to")); // false, because of two empty space
 
+//? indexOf || lastIndexOf
+
+let mes = "You are registered to membership";
+
+console.log(mes.indexOf("i")); // 11
+console.log(mes.lastIndexOf("i")); // 30
+
