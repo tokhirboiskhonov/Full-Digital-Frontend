@@ -448,3 +448,26 @@ let Tname = "Tokhirkhuja",
 
 console.log(`My full name is ${Tname} ${Tsurname} and I'm ${age} years old!`);
 
+//* Date
+
+const today = new Date();
+// console.log(today);
+
+let todayDate = today.getDate();
+// console.log(todayDate);
+
+let todayMonth = today.getMonth();
+// console.log(todayMonth);
+
+let todayHours = today.getHours();
+// console.log(todayHours);
+
+let todayMinutes = today.getMinutes();
+// console.log(todayMinutes);
+
+let todayYear = today.getFullYear();
+// console.log(todayYear);
+
+const timeInMs = Date.now();
+// console.log(timeInMs);
+console.log(timeInMs / 1000 / 60 / 60 / 24 / 365);
