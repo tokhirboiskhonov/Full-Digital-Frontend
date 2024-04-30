@@ -586,3 +586,15 @@ myUser1.city = "Tashkent";
 console.log(myUser);
 console.log(myUser1);
 
+//* Iterating an Array (for of, for in)
+
+const arr = [1, 2, 3, 4, 5];
+
+//? for of
+
+/* let sum = 0;
+for (const val of arr) {
+  sum += val;
+}
+console.log(sum); */
+
