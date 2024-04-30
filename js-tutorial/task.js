@@ -248,3 +248,12 @@ console.log(right2("Hi")); // Hi
 
 console.log("Hello".slice(-2));
 
+//! 17. Task
+
+function makeAbba(str1, str2) {
+  return str1 + str2 + str2 + str1;
+}
+
+console.log(makeAbba("Hi", "Bye"));
+console.log(makeAbba("Yo", "Alice"));
+console.log(makeAbba("What", "Up"));
