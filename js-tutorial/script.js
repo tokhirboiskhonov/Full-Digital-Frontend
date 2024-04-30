@@ -602,3 +602,28 @@ console.log(sum); */
 
 for (const index in arr) console.log(index); // 0 1 2 3 4
 
+//* join and split
+
+//? join -> join methods help convert from array to string
+
+const cardNumbers = [7, 9, 15, 6];
+const cardNumbersJoined = cardNumbers.join("");
+console.log(cardNumbersJoined);
+
+//? split -> split methods help convert from string to array
+
+let animals = "dog-cat-chicken-pig-wolf";
+
+let newAnimals = animals.split("-");
+
+console.log(newAnimals); // [ 'dog', 'cat', 'chicken', 'pig', 'wolf' ]
+
+for (const value of newAnimals) console.log(value); // dog cat chicken pig wolf
+
+// Challenge
+
+let text2 = "Telegram";
+
+let letterText = text2.split("");
+
+console.log(letterText); // ['T', 'e', 'l', 'e', 'g', 'r', 'a', 'm']
