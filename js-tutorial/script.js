@@ -537,4 +537,10 @@ console.log(cars.indexOf("malibu")); // 0
 
 console.log(cars.lastIndexOf("spark")); // 4
 
+//? includes (tekshiradi?)
+
+console.log(cars.includes("spark")); // true
+console.log(cars.includes("captiva")); // false
+console.log(cars.includes("ma")); // false
+
 
