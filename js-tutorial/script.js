@@ -558,4 +558,31 @@ let movies1 = ["Forsache", "Vanishing Time", "Steve", "Novda"];
 let newMovies1 = movies1.slice(1, 4);
 console.log(newMovies1); // [ 'Vanishing Time', 'Steve', 'Novda' ], it returns new copied array
 
+//? Spread operator
+
+/* let films = ["Harry", "Steve", "Novda"];
+let newHero = films;
+
+newHero[0] = "Aziz";
+console.log(newHero);
+console.log(films);
+
+let newMovies2 = [...films];
+console.log(films);
+console.log(newMovies2);
+
+ console.log(films == newMovies); */
+
+let myUser = {
+  firstName: "Tokhirkhuja",
+  lastName: "Boiskhonov",
+  city: "Kuala Lummpur",
+};
+
+let myUser1 = { ...myUser };
+
+myUser1.city = "Tashkent";
+
+console.log(myUser);
+console.log(myUser1);
 
