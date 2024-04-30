@@ -543,4 +543,12 @@ console.log(cars.includes("spark")); // true
 console.log(cars.includes("captiva")); // false
 console.log(cars.includes("ma")); // false
 
+//? concat()
+
+let num1 = [1, 2, 3];
+let num2 = [4, 5, 6];
+
+let num3 = num1.concat(num2);
+console.log(num3);
+
 
