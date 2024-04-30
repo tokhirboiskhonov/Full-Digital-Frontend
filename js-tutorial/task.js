@@ -234,3 +234,17 @@ console.log(helloName("Bob")); // Hello Bob!
 console.log(helloName("Alice")); // Hello Alice!
 console.log(helloName("X")); // Hello X!
 
+//! 16. Task
+
+function right2(string) {
+  if (string.length > 2) {
+    return string.slice(-2) + string.slice(0, -2);
+  } else return string;
+}
+
+console.log(right2("Hello")); //loHel
+console.log(right2("java")); // vaja
+console.log(right2("Hi")); // Hi
+
+console.log("Hello".slice(-2));
+
