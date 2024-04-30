@@ -551,4 +551,11 @@ let num2 = [4, 5, 6];
 let num3 = num1.concat(num2);
 console.log(num3);
 
+//? slice
+
+let movies1 = ["Forsache", "Vanishing Time", "Steve", "Novda"];
+
+let newMovies1 = movies1.slice(1, 4);
+console.log(newMovies1); // [ 'Vanishing Time', 'Steve', 'Novda' ], it returns new copied array
+
 
