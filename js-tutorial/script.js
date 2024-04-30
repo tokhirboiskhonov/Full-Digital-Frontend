@@ -533,4 +533,8 @@ console.log(cars.indexOf("spark")); // 1
 console.log(cars.indexOf(true)); // 2
 console.log(cars.indexOf("malibu")); // 0
 
+//? lastIndexOf
+
+console.log(cars.lastIndexOf("spark")); // 4
+
 
