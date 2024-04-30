@@ -525,4 +525,12 @@ console.log(numbers); // [1, 2, 'book', 'pen', 'sweet', 5]
 3) includes 
 */
 
+//? indexOf
+
+const cars = ["malibu", "spark", true, 7, "spark"];
+
+console.log(cars.indexOf("spark")); // 1
+console.log(cars.indexOf(true)); // 2
+console.log(cars.indexOf("malibu")); // 0
+
 
