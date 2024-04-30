@@ -598,3 +598,7 @@ for (const val of arr) {
 }
 console.log(sum); */
 
+//? for in
+
+for (const index in arr) console.log(index); // 0 1 2 3 4
+
