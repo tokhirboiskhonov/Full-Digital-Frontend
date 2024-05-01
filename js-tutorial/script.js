@@ -628,9 +628,9 @@ let letterText = text2.split("");
 
 console.log(letterText); // ['T', 'e', 'l', 'e', 'g', 'r', 'a', 'm']
 
-// Guess number game
+//? Guess number game
 
-function guessNumber() {
+/* function guessNumber() {
   let randomNum = Math.floor(Math.random() * 11);
 
   let guess;
@@ -648,4 +648,4 @@ function guessNumber() {
   console.log("G'alaba! Tabriklaymiz");
 }
 
-guessNumber();
+guessNumber(); */
