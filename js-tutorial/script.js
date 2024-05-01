@@ -627,3 +627,25 @@ let text2 = "Telegram";
 let letterText = text2.split("");
 
 console.log(letterText); // ['T', 'e', 'l', 'e', 'g', 'r', 'a', 'm']
+
+// Guess number game
+
+function guessNumber() {
+  let randomNum = Math.floor(Math.random() * 11);
+
+  let guess;
+
+  do {
+    guess = prompt("1-10 gacha sonni tahmin qilib, kiriting");
+    console.log(guess, randomNum);
+
+    if (randomNum > guess) {
+      console.log("Siz kichik sonni tahmin qildingiz!");
+    } else {
+      console.log("Siz katta sonni tahmin qildingiz!");
+    }
+  } while (guess != randomNum);
+  console.log("G'alaba! Tabriklaymiz");
+}
+
+guessNumber();
