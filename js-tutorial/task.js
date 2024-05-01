@@ -270,3 +270,14 @@ const numbers1 = arrayFromRange(-10, -4);
 
 console.log(numbers1); // [ -10, -9, -8, -7, -6, -5, -4 ]
 
+//! 19. Task
+
+let myArray = ["Hello", "Bye", true, 1, -10, "Something"];
+
+function includes(array, searchElement) {
+  if (array.indexOf(searchElement) !== -1)
+    console.log(`Bu ${searchElement} element  mavjud`);
+  else console.log("Afsuski, bu element mavjud emas!");
+}
+
+includes(myArray, false);
