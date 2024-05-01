@@ -257,3 +257,16 @@ function makeAbba(str1, str2) {
 console.log(makeAbba("Hi", "Bye"));
 console.log(makeAbba("Yo", "Alice"));
 console.log(makeAbba("What", "Up"));
+
+//! 18. Task
+
+const arrayFromRange = (min, max) =>
+  [...Array(max - min + 1).keys()].map((idx) => idx + min);
+
+const numbers = arrayFromRange(1, 4);
+console.log(numbers); // [ 1, 2, 3, 4 ]
+
+const numbers1 = arrayFromRange(-10, -4);
+
+console.log(numbers1); // [ -10, -9, -8, -7, -6, -5, -4 ]
+
