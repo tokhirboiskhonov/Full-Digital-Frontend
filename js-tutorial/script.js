@@ -656,3 +656,43 @@ Window object 3 ga bo'linadi - document, .....
 _BOM - Browser Object Model
 -JavaScript - Object, Array, Function ...
  */
+
+//* DOM bilan ishlashga kirish
+
+//? - Node nime?
+
+// Nodes (Tugunlar) bilan ishalash
+
+// Children ban qanday is   q q q	hlashi ko'rdik
+
+//? children (HTMlCollection)
+
+/* const firstElement = document.body.children[0];
+firstElement.style.backgroundColor = "green";
+firstElement.style.color = "white";
+console.log(firstElement);
+ */
+//? childNodes (NodeList) -> aniq element va uni oldindagi bosh joylani ko'rsatadi
+
+/* const bodyElement = document.body;
+
+console.log(bodyElement.children);
+console.log(bodyElement.childNodes); */
+
+//? hasChildNodes() - node bor yoki yo'qligini tekshirish uchun.
+
+const firstItem = document.body.children[0];
+console.log(firstItem);
+
+const firstItemChild = firstItem.children[0];
+console.log(firstItemChild);
+
+console.log(firstItem.hasChildNodes()); // true
+
+//? ParentNode || parentElement - bular bizga elemenetlani belgilaydi 2otasini ham.
+
+const firstItem1 = document.body.children[0];
+const firstIemChild1 = firstItem1.children[0];
+
+const firstItemChildParent = firstItemChild.parentElement;
+console.log(firstItemChildParent);
