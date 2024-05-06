@@ -649,3 +649,10 @@ console.log(letterText); // ['T', 'e', 'l', 'e', 'g', 'r', 'a', 'm']
 }
 
 guessNumber(); */
+
+/* 
+Window object 3 ga bo'linadi - document, .....
+-DOM -  Document Object Model - navigator, screen, location, frames, 
+_BOM - Browser Object Model
+-JavaScript - Object, Array, Function ...
+ */
