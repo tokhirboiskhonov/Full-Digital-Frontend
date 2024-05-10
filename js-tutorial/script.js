@@ -378,7 +378,7 @@ exPerson.address.city = "Langkawi";
 console.log(exPerson);
 console.log(person2); */
 
-/*
+/* 
 * String(methods)
 
 
@@ -462,7 +462,7 @@ let Tname = "Tokhirkhuja",
   Tsurname = "Boiskhonov",
   age = 24;
 
-console.log(`My full name is ${Tname} ${Tsurname} and I'm ${age} years old!`);
+console.log(`My full name is ${Tname} ${Tsurname} and I'm ${age} years old!`); 
 */
 
 /* 
@@ -488,10 +488,10 @@ console.log(todayYear);
 
 const timeInMs = Date.now();
 console.log(timeInMs);
-console.log(timeInMs / 1000 / 60 / 60 / 24 / 365);
+console.log(timeInMs / 1000 / 60 / 60 / 24 / 365); 
 */
 
-/*
+/* 
 * Arrays
 
 ! #1 -> Adding and Removing elements
@@ -586,19 +586,19 @@ console.log(newMovies2);
 
  console.log(films == newMovies);
 
-
-let myUser = {
-  firstName: "Tokhirkhuja",
-  lastName: "Boiskhonov",
-  city: "Kuala Lummpur",
-};
-
-let myUser1 = { ...myUser };
-
-myUser1.city = "Tashkent";
-
-console.log(myUser);
-console.log(myUser1);
+ 
+ let myUser = {
+	 firstName: "Tokhirkhuja",
+	 lastName: "Boiskhonov",
+	 city: "Kuala Lummpur",
+	};
+	
+	let myUser1 = { ...myUser };
+	
+	myUser1.city = "Tashkent";
+	
+	console.log(myUser);
+	console.log(myUser1);
 
 */
 /* 
