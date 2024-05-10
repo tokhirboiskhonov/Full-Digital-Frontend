@@ -752,3 +752,19 @@ console.log(infoSalaries);
 const item = document.getElementsByClassName("item");
 console.log(item);
 
+? querySelector
+
+const itemEl = document.querySelector(".item");
+console.log(itemEl);
+
+? querySelectorAll
+const elItem = document.querySelectorAll(".item");
+
+// elItem[1].style.color = "red";
+
+const setColor = (index, color) => (elItem[index].style.color = color);
+
+setColor(2, "red");
+// console.log(elItem);
+*/
+
