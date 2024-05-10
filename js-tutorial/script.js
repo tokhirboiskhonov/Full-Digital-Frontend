@@ -768,3 +768,36 @@ setColor(2, "red");
 // console.log(elItem);
 */
 
+/* 
+	* Changing HTML elements (HTML elementlarni o'zgartirish)
+
+	? element.innerHTML
+	? element.innerText
+	? element.setAttribute
+	? element.style.property
+
+	! innerText returns all text contained by an element and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.
+
+
+const aboutInfo = document.querySelector(".info-salary");
+console.log(aboutInfo);
+
+? element.innerHTMl
+aboutInfo.innerHTML = "Contact Info";
+// aboutInfo.innerHTML = '<i>Contact Info</i>'
+
+? element.innerText
+aboutInfo.innerText = "Contact Info";
+
+? element.setAttribute
+
+const text = document.querySelector("p");
+text.setAttribute("class", "extra");
+text.setAttribute("style", "color: red");
+text.setAttribute("disabled", "");
+
+? element.style.property
+
+text.style.color = 'red';
+text.style.backgroundColor = 'yellow';
+*/
