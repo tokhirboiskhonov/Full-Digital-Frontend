@@ -697,18 +697,33 @@ console.log(bodyElement.childNodes); */
 
 //? hasChildNodes() - node bor yoki yo'qligini tekshirish uchun.
 
-const firstItem = document.body.children[0];
-console.log(firstItem);
+// const firstItem = document.body.children[0];
+// console.log(firstItem);
 
-const firstItemChild = firstItem.children[0];
-console.log(firstItemChild);
+// const firstItemChild = firstItem.children[0];
+// console.log(firstItemChild);
 
-console.log(firstItem.hasChildNodes()); // true
+// console.log(firstItem.hasChildNodes()); // true
 
-//? ParentNode || parentElement - bular bizga elemenetlani belgilaydi 2otasini ham.
+//? ParentNode || parentElement - bular bizga elemenetlarni otasini belgilaydi 2lasi ham.
 
-const firstItem1 = document.body.children[0];
-const firstIemChild1 = firstItem1.children[0];
+// const firstItem1 = document.body.children[0];
+// const firstIemChild1 = firstItem1.children[0];
 
-const firstItemChildParent = firstItemChild.parentElement;
-console.log(firstItemChildParent);
+// const firstItemChildParent = firstItemChild.parentElement;
+// console.log(firstItemChildParent);
+
+/* nextSibling - keyingi node ga o't
+nextElementSibling - keyingi elementga o't */
+
+/* previousSibling - keyingi node ga o't
+previousElementSibling - keyingi elementga o't */
+
+// const elList = document.body.children[0];
+// const elItem = elList.children[0];
+
+// let prevItem = elItem.nextElementSibling;
+
+// console.log(prevItem.previousElementSibling);
+
+/* 
