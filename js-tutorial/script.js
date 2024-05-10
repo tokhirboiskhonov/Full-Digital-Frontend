@@ -735,3 +735,11 @@ previousElementSibling - keyingi elementga o't */
 	? 2-usul: (Node List)
 				querySelector
 				qeuerySelectorAll
+
+? getElementById
+const firstEl = document.getElementById("relax");
+console.log(firstEl);
+
+const secondEl = document.getElementById("text");
+console.log(secondEl);
+
