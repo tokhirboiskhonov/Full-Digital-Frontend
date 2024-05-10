@@ -743,3 +743,7 @@ console.log(firstEl);
 const secondEl = document.getElementById("text");
 console.log(secondEl);
 
+? getElementsByTagName
+const infoSalaries = document.getElementsByTagName("h1");
+console.log(infoSalaries);
+
