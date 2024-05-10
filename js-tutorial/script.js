@@ -727,3 +727,11 @@ previousElementSibling - keyingi elementga o't */
 // console.log(prevItem.previousElementSibling);
 
 /* 
+	* Finding HTML Elements
+	? 1-usul: (HTML collection)
+				getElementById
+				getElementsByTagName
+				getElementByCLassName
+	? 2-usul: (Node List)
+				querySelector
+				qeuerySelectorAll
