@@ -859,3 +859,11 @@ text.style.backgroundColor = 'yellow';
 
 	console.log(forms);
 
+	! 2. document.title
+
+	let titleWebsite = document.title;
+	titleWebsite = "Tokhirkhuja";
+	console.log(titleWebsite);
+
+	document.title = 'Nma gap?'
+
