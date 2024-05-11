@@ -811,3 +811,13 @@ text.style.backgroundColor = 'yellow';
 		? document.replaceChild(new, old)
 		? document.write(text)
 
+		! 1. document.createElement(element)
+		const elWrapper = document.querySelector(".wrapper");
+		const newElement = document.createElement("h1");
+		newElement.setAttribute("class", "title");
+		newElement.innerText = "Hello World!";
+
+		const newParagraph = document.createElement("p");
+
+		newParagraph.innerText = "Welcome to our website";
+
