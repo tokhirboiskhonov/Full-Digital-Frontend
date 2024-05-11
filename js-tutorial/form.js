@@ -26,6 +26,10 @@ inputMarried.addEventListener("keyup", () => {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   resultBox.innerHTML = "Successful send! ✅";
+  resultBox.classList.add("active"); // Add the active class
+  setTimeout(() => {
+    resultBox.classList.remove("active"); // Remove the active class after a delay
+  }, 2000);
 });
 
 cancelBtn.addEventListener("click", (e) => {
@@ -36,4 +40,6 @@ cancelBtn.addEventListener("click", (e) => {
   elName.textContent = "";
   elAge.textContent = "";
   elMarried.textContent = "";
+  resultBox.classList.remove("active");
+  resultBox.innerHTML = "";
 });
