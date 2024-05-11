@@ -853,3 +853,9 @@ text.style.backgroundColor = 'yellow';
 		? document.body
 		? document.baseURI
 
+	! 1. document.forms --> Nechta forma borligini xisoblab beradi
+
+	const forms = document.forms;
+
+	console.log(forms);
+
