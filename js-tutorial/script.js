@@ -906,3 +906,86 @@ text.style.backgroundColor = 'yellow';
 
 	console.log(circle);
 */
+
+/* 
+* Selectors
+
+const btn = document.querySelector("#btn");
+
+? Salom berish functionni
+
+function sayHello() {
+  alert("Assalomu allaikum");
+}
+
+* Event Listener
+	! 1. Old version event listener(onclick, onmouseOver)
+btn.onclick = function(){
+	console.log('Assalomu allaikum')
+}
+
+	! 2. New version event listener(addEventListener)
+btn.addEventListener("click", sayHello); // Here we invoke a function
+*/
+
+/*
+! create a new function, which calls addNumber and deleteNumber, then we did count increase and decrease using with 2 buttons
+const btn1 = document.querySelector("#btn1");
+const btn2 = document.querySelector("#btn2");
+const parag = document.querySelector(".count");
+
+btn1.addEventListener("click", addNumber);
+btn2.addEventListener("click", deleteNumber);
+
+let count = 0;
+
+function addNumber() {
+  count += 3;
+  parag.innerHTML = count;
+}
+
+function deleteNumber() {
+  count -= 3;
+  if (count >= 0) parag.innerHTML = count;
+} 
+*/
+
+/* 
+! practiced how to get value using querySelector and values
+const text = document.querySelector("#text");
+const inner = document.getElementById("inner");
+
+function getVal() {
+  const textValue = text.value;
+
+  inner.innerHTML = textValue;
+
+  document.getElementById("text").value = "";
+} 
+*/
+
+/* 
+	! Practice
+const todoList = document.querySelector(".todo-list");
+// const todoItem = document.querySelectorAll(".todo-item");
+const todoItem = todoList.children;
+const submitBtn = document.querySelector("#btn");
+
+submitBtn.addEventListener("click", addItem);
+
+function addItem() {
+  const newItem = document.createElement("li");
+  newItem.textContent = `item ${todoItem.length + 1}`;
+  newItem.classList.add("todo-item");
+  todoList.append(newItem);
+} 
+*/
+
+const animated = document.querySelector(".animated");
+
+const submit = document.getElementById("btn");
+
+submit.addEventListener("click", () => {
+  animated.style.color = "red";
+  animated.classList.toggle("animated-title");
+});
