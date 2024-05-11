@@ -825,3 +825,9 @@ text.style.backgroundColor = 'yellow';
 		elWrapper.appendChild(newElement);
 		elWrapper.appendChild(newParagraph);
 
+		! 3. document.removeChild(element)
+
+		const todoList = document.querySelector("#todo-list");
+		const thirdItem = todoList.children[2];
+		todoList.removeChild(thirdItem);
+
