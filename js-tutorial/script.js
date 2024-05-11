@@ -801,3 +801,13 @@ text.setAttribute("disabled", "");
 text.style.color = 'red';
 text.style.backgroundColor = 'yellow';
 */
+
+/* 
+	* Adding and Deleting elements (Elementlarni qo'shish va ochirish)
+
+		? document.createElement(element)
+		? document.removeChild(element)
+		? document.appendChild(element)
+		? document.replaceChild(new, old)
+		? document.write(text)
+
