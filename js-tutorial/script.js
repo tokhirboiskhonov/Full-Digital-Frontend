@@ -872,3 +872,8 @@ text.style.backgroundColor = 'yellow';
 	const bodyElement = document.body;
 	console.log(bodyElement);
 
+	! 4. document.baseURI
+
+	let mes = document.baseURI;
+	console.log(mes); // http://127.0.0.1:5500/js-tutorial/index.html
+
