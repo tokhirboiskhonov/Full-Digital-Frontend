@@ -846,3 +846,10 @@ text.style.backgroundColor = 'yellow';
 
 		document.write('hello guys!');
 
+	* Finding HTMl Objects (HTML object larini topish)
+
+		? document.forms
+		? document.title
+		? document.body
+		? document.baseURI
+
