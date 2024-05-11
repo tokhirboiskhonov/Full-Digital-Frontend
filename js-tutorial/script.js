@@ -831,3 +831,14 @@ text.style.backgroundColor = 'yellow';
 		const thirdItem = todoList.children[2];
 		todoList.removeChild(thirdItem);
 
+		! 4. document.replaceChild(new, old)
+
+		const todoList = document.querySelector("#todo-list");
+		console.log(todoList);
+
+		const randomItem = todoList.children[1];
+		const newElItem = document.createElement("li");
+		newElItem.innerText = "Telephone";
+		todoList.appendChild(newElItem);
+		todoList.replaceChild(newElItem, randomItem)
+
