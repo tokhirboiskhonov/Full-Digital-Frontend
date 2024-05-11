@@ -894,3 +894,15 @@ text.style.backgroundColor = 'yellow';
 	newCircle.classList.add("circle");
 	elContainer.prepend(newCircle); 
 
+	? circle
+
+	const circle = document.querySelectorAll(".circle");
+
+	! before
+	circle[1].before(newSquare);
+
+	! after
+	circle[2].after(newSquare);
+
+	console.log(circle);
+*/
