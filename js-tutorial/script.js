@@ -842,3 +842,7 @@ text.style.backgroundColor = 'yellow';
 		todoList.appendChild(newElItem);
 		todoList.replaceChild(newElItem, randomItem)
 
+		! 5. document.write(text)
+
+		document.write('hello guys!');
+
