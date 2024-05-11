@@ -867,3 +867,8 @@ text.style.backgroundColor = 'yellow';
 
 	document.title = 'Nma gap?'
 
+	! 3. document.body
+
+	const bodyElement = document.body;
+	console.log(bodyElement);
+
