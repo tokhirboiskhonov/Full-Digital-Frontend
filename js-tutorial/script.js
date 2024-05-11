@@ -821,3 +821,7 @@ text.style.backgroundColor = 'yellow';
 
 		newParagraph.innerText = "Welcome to our website";
 
+		! 2. document.appendChild(element)
+		elWrapper.appendChild(newElement);
+		elWrapper.appendChild(newParagraph);
+
