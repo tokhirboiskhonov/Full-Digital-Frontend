@@ -877,3 +877,14 @@ text.style.backgroundColor = 'yellow';
 	let mes = document.baseURI;
 	console.log(mes); // http://127.0.0.1:5500/js-tutorial/index.html
 
+	* classList.add()
+
+	const elContainer = document.querySelector(".container");
+
+	const newSquare = document.createElement("div");
+	newSquare.classList.add("square");
+	newSquare.style.backgroundColor = "blueviolet";
+	console.log(newSquare);
+
+	elContainer.appendChild(newSquare);
+
