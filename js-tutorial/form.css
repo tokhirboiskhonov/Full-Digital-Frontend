@@ -85,3 +85,71 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.form {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__input {
+  max-width: 300px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.buttons {
+  max-width: 200px;
+  width: 100%;
+}
+
+.btn {
+  padding: 7px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: green;
+}
+
+.btn-cancel {
+  background-color: red;
+}
+
+.text__space {
+  height: 100px;
+  border-top: none;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.paragraph {
+  margin: 0;
+}
+
+.result__box {
+  margin: 0;
+  transform: translate(30px, 30px) rotate(360deg);
+  transition: 1s all easy-in;
+}
