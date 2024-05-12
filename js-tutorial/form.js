@@ -26,11 +26,7 @@ inputMarried.addEventListener("keyup", () => {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (inputName.value != "" && inputAge.value != "" && inputMarried.value != "")
-  resultBox.innerHTML = "Successful send! ✅";
-  resultBox.classList.add("active"); // Add the active class
-  setTimeout(() => {
-    resultBox.classList.remove("active"); // Remove the active class after a delay
-  }, 2000);
+    resultBox.innerHTML = "Successful send! ✅";
 });
 
 cancelBtn.addEventListener("click", (e) => {
