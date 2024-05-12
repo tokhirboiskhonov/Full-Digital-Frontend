@@ -37,9 +37,5 @@ cancelBtn.addEventListener("click", (e) => {
   inputName.value = "";
   inputAge.value = "";
   inputMarried.value = "";
-  elName.textContent = "";
-  elAge.textContent = "";
-  elMarried.textContent = "";
-  resultBox.classList.remove("active");
-  resultBox.innerHTML = "";
+  resultBox.innerHTML = "Unsuccessful, try again!	";
 });
