@@ -34,5 +34,5 @@ cancelBtn.addEventListener("click", (e) => {
   inputName.value = "";
   inputAge.value = "";
   inputMarried.value = "";
-  resultBox.innerHTML = "Unsuccessful, try again!	";
+  resultBox.innerHTML = "Unsuccessful, try again!😢";
 });
