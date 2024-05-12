@@ -8,19 +8,16 @@ const submitBtn = document.querySelector(".btn-submit");
 const cancelBtn = document.querySelector(".btn-cancel");
 const resultBox = document.querySelector(".result__box");
 
-inputName.addEventListener("keyup", () => {
-  let val = inputName.value;
-  elName.textContent = `💭 Name: ${val}`;
+inputName.addEventListener("keyup", (evt) => {
+  elName.textContent = `💭 Name: ${evt.target.value}`;
 });
 
-inputAge.addEventListener("keyup", () => {
-  let val = inputAge.value;
-  elAge.textContent = `🧐 Age: ${val}`;
+inputAge.addEventListener("keyup", (evt) => {
+  elAge.textContent = `🧐 Age: ${evt.target.value}`;
 });
 
-inputMarried.addEventListener("keyup", () => {
-  let val = inputMarried.value;
-  elMarried.textContent = `😘 Is married: ${val}`;
+inputMarried.addEventListener("keyup", (evt) => {
+  elMarried.textContent = `😘 Is married: ${evt.target.value}`;
 });
 
 submitBtn.addEventListener("click", (e) => {
