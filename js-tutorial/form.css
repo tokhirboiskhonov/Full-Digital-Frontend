@@ -149,16 +149,21 @@ a {
 }
 
 .result__box {
-  position: absolute;
-  top: 360px;
-  left: 430px; /* Start position outside the viewport */
+  position: fixed;
+  top: 333px;
+  left: 220px;
   color: #000;
   padding: 10px;
   border-radius: 5px;
-  transition: transform 0.5s ease-in-out; /* Transition effect */
+  animation: moveBox 4s linear infinite alternate;
   z-index: 1000;
 }
 
-.result__box.active {
-  transform: translateX(-100%); /* Move the element from right to left */
+@keyframes moveBox {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
