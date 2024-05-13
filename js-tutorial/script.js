@@ -981,6 +981,8 @@ function addItem() {
 } 
 */
 
+/* 
+	! Animated
 const animated = document.querySelector(".animated");
 
 const submit = document.getElementById("btn");
