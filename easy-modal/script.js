@@ -12,3 +12,17 @@ openModalBtn3.addEventListener("click", openModal);
 modalContainer.addEventListener("click", closeModal);
 closeModalBtn.addEventListener("click", closeModal);
 
+// Functions
+function openModal() {
+  modalContainer.style.display = "block";
+  document.addEventListener("keydown", closeModalOnEsc);
+}
+
+function closeModal() {
+  modalContainer.style.display = "none";
+  document.removeEventListener("keydown", closeModalOnEsc);
+}
+
+function closeModalOnEsc(evt) {
+  if (evt.keyCode === 27) closeModal();
+}
