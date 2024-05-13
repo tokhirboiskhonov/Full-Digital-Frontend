@@ -990,4 +990,38 @@ const submit = document.getElementById("btn");
 submit.addEventListener("click", () => {
   animated.style.color = "red";
   animated.classList.toggle("animated-title");
+}); 
+*/
+
+// Selectors
+const todoList = document.querySelector(".todo-list");
+
+const submitBtn = document.querySelector("#submit");
+
+const todoNR = document.querySelector(".todo-nr");
+
+const items = todoList.children;
+
+// Event listener
+submitBtn.addEventListener("click", addItem);
+
+todoList.addEventListener("click", () => {
+  console.log("ToDoList bosildi!");
 });
+
+// Functions
+
+function addItem() {
+  const newTodoItem = document.createElement("li");
+  newTodoItem.classList.add("item");
+  newTodoItem.innerHTML = `Item ${items.length + 1}`;
+  todoList.append(newTodoItem);
+
+  newTodoItem.addEventListener("click", deleteItem);
+}
+
+function deleteItem(evt) {
+  evt.stopPropagation();
+  const eachItem = evt.target;
+  eachItem.remove();
+}

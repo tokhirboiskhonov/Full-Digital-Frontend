@@ -7,19 +7,24 @@
     <title>Intractive JavaScript</title>
   </head>
   <body>
-    <!-- <ul class="todo-list">
-      <li class="todo-item">item 1</li>
-      <li class="todo-item">item 2</li>
-      <li class="todo-item">item 3</li>
-      <li class="todo-item">item 4</li>
-      <li class="todo-item">item 5</li>
-    </ul> -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <ul style="padding: 20px" class="todo-list"></ul>
 
-    <h2 class="animated">Dangasa student</h2>
+      <h2 style="margin-bottom: 10px;">
+        Number of items:
+        <b class="todo-nr"></b>
+      </h2>
 
-    <!-- <button id="btn" type="submit">Add a item</button> -->
+      <button style="cursor: pointer" id="submit">SUBMIT</button>
+    </div>
 
-    <button type="submit" id="btn">Click me!</button>
     <script src="./script.js"></script>
     <!-- <script src="./task.js"></script> -->
   </body>
