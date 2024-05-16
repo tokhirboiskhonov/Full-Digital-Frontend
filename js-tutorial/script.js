@@ -1038,3 +1038,11 @@ function deleteItem(evt) {
   console.log(car); // Buggati Ferrari BMW
 }); */
 
+//! map -> it is able to return values using with map  method in Array
+
+/* const uniqueCars = cars.map(function (car) {
+  return car;
+}); */
+
+// console.log(uniqueCars); // [ 'Buggati', 'Ferrari', 'BMW' ]
+
