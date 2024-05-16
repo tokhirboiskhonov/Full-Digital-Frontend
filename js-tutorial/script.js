@@ -1046,3 +1046,18 @@ function deleteItem(evt) {
 
 // console.log(uniqueCars); // [ 'Buggati', 'Ferrari', 'BMW' ]
 
+//! find -> return value
+
+/* const movies = [
+  "I'm a Harry",
+  "Squid Game",
+  "You are not alone",
+  "Blue sky is hot",
+];
+
+const searchMovies = movies.find(function (movie) {
+  return movie.includes("Game");
+});
+
+console.log(searchMovies); // Squid Game */
+
