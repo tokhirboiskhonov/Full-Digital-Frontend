@@ -1026,3 +1026,15 @@ function deleteItem(evt) {
   const eachItem = evt.target;
   eachItem.remove();
 }
+ */
+
+//* Higher Order Function (HOF)
+
+//! forEach -> we can't return any value using with forEach method in Array
+
+// const cars = ["Buggati", "Ferrari", "Merc"];
+
+/* cars.forEach(function (car) {
+  console.log(car); // Buggati Ferrari BMW
+}); */
+
