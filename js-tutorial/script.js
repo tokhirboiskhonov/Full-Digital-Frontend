@@ -1100,3 +1100,12 @@ const searchClubs = footballClubs.filter((club) => {
   return club.rating > 8.5;
 });
 console.log(searchClubs);
+
+//! Some and every methods
+
+const arr = [1, 2, 3, 4, 5, 6];
+
+const even = (el) => el % 2 === 0;
+console.log(arr.some(even)); // true
+console.log(arr.every(even)); // false
+
