@@ -993,7 +993,8 @@ submit.addEventListener("click", () => {
 }); 
 */
 
-// Selectors
+/* 
+//! Selectors
 const todoList = document.querySelector(".todo-list");
 
 const submitBtn = document.querySelector("#submit");
@@ -1002,14 +1003,14 @@ const todoNR = document.querySelector(".todo-nr");
 
 const items = todoList.children;
 
-// Event listener
+//! Event listener
 submitBtn.addEventListener("click", addItem);
 
 todoList.addEventListener("click", () => {
   console.log("ToDoList bosildi!");
 });
 
-// Functions
+//! Functions
 
 function addItem() {
   const newTodoItem = document.createElement("li");
