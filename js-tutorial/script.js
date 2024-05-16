@@ -1061,3 +1061,42 @@ const searchMovies = movies.find(function (movie) {
 
 console.log(searchMovies); // Squid Game */
 
+//! filter methodi ->
+
+/* const movies = [
+  "I'm a Harry",
+  "Squid Game",
+  "You are not alone",
+  "Blue sky is hot",
+  "Game Over",
+];
+
+const searchMovies = movies.filter(function (movie) {
+  return movie.length < 10;
+});
+
+console.log(searchMovies); */
+
+const footballClubs = [
+  {
+    title: "Barcelone",
+    rating: "9.0",
+  },
+  {
+    title: "Roma",
+    rating: "8.7",
+  },
+  {
+    title: "Pakhtakor",
+    rating: "4.9",
+  },
+  {
+    title: "Genoa",
+    rating: "5.9",
+  },
+];
+
+const searchClubs = footballClubs.filter((club) => {
+  return club.rating > 8.5;
+});
+console.log(searchClubs);
