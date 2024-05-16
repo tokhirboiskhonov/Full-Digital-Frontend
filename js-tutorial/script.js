@@ -1109,3 +1109,11 @@ const even = (el) => el % 2 === 0;
 console.log(arr.some(even)); // true
 console.log(arr.every(even)); // false
 
+//! Ternary operator
+
+const cars = ["Buggati", "Ferrari", "Merc"];
+
+const newCars = cars.map((item) => {
+  return item === "Buggati" ? true : false;
+});
+console.log(newCars); // [ true, false, false ]
